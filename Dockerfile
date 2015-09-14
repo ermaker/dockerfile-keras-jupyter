@@ -1,6 +1,6 @@
 FROM ermaker/keras
 
-RUN conda install -y jupyter pandas mathplotlib
+RUN conda install -y jupyter pandas matplotlib
 
 VOLUME /notebook
 WORKDIR /notebook
