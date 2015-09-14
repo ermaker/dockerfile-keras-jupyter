@@ -1,6 +1,6 @@
 FROM ermaker/keras
 
-RUN conda install -y jupyter pandas matplotlib
+RUN conda install -y jupyter pandas matplotlib seaborn
 
 VOLUME /notebook
 WORKDIR /notebook
