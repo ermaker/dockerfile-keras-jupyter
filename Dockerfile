@@ -1,10 +1,11 @@
 FROM ermaker/keras:gpu
 
-RUN conda install -y -c conda-forge \
-      pydot \
-      xorg-libxpm \
-      xorg-libxrender \
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+      graphviz \
+    && rm -rf /var/lib/apt/lists/* \
     && conda install -y \
+      pydot \
       jupyter \
       matplotlib \
       seaborn \
