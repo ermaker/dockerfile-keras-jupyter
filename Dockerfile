@@ -1,4 +1,4 @@
-FROM ermaker/keras
+FROM ermaker/keras:gpu
 
 RUN conda install -y \
     jupyter \
