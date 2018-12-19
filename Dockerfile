@@ -1,9 +1,13 @@
 FROM ermaker/keras:gpu
 
-RUN conda install -y \
-    jupyter \
-    matplotlib \
-    seaborn \
+RUN conda install -y -c conda-forge \
+      pydot \
+      xorg-libxpm \
+      xorg-libxrender \
+    && conda install -y \
+      jupyter \
+      matplotlib \
+      seaborn \
     && conda clean --yes --tarballs --packages --source-cache
 
 VOLUME /notebook
