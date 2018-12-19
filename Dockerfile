@@ -3,7 +3,8 @@ FROM ermaker/keras:gpu
 RUN conda install -y \
     jupyter \
     matplotlib \
-    seaborn
+    seaborn \
+    && conda clean --yes --tarballs --packages --source-cache
 
 VOLUME /notebook
 WORKDIR /notebook
