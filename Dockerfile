@@ -1,4 +1,4 @@
-FROM ermaker/keras:gpu
+FROM ermaker/keras:cpu
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
