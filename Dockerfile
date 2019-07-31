@@ -1,4 +1,4 @@
-FROM ermaker/keras:python3
+FROM ermaker/keras:py3
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
